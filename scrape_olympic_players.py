@@ -84,7 +84,7 @@ while current_scroll < total_hight:
 driver.close()
 
 # Creating thecsv file
-columns = ["Country","Country","Gold","Silver","Bronze","Total Medals"]
+columns = ["Country","Player Name","Gold","Silver","Bronze","Total Medals"]
 df = pd.DataFrame(details, columns = columns)
 df.to_csv("Olympic_players_data.csv", index=False)
  
